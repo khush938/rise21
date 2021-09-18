@@ -110,7 +110,7 @@ body{
     background: url('../med/butt-8.png');
     background-position: bottom;
     position: absolute;
-    top: calc(100% - 460px);
+    top: calc(100% - 502px);
     background-repeat: no-repeat;
     height: 500px;
     left:0px;
@@ -375,7 +375,6 @@ body{
 }
 @media screen and (max-width:900px){
     .q-event-bottom{
-        top: calc(100% - 1120px);
         z-index: -1;
     }
     .contact{
