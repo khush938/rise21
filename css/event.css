@@ -1,0 +1,35 @@
+@font-face {
+    font-family: manrope-bold;
+    src: url('../inc/fonts/bold.otf');
+}
+@font-face {
+    font-family: manrope-thin;
+    src: url('../inc/fonts/regular.otf');
+}
+html,body{
+    font-family: manrope-thin;
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: white;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.header-logo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70px;
+    padding: 15px;
+}
+.header-logo img{
+    width: 100%;
+}

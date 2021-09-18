@@ -1,0 +1,91 @@
+header{
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.q-head-logo-wrap{
+    font-size: 20px;
+    padding: 15px;
+}
+.q-head-nav-wrap{
+    display: inline-block;
+    padding-left:30px;
+}
+.q-head-nav{
+    color: rgba(255, 255, 255, 0.651);
+    padding:20px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.q-head-nav:hover{
+    color: white;
+}
+.q-head-nav.regi{
+   color: orange !important;
+   position: relative;
+}
+.q-head-nav.regi::before{
+    background: orange;
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+}
+header.transform .q-head-nav{
+    color: rgba(0, 0, 0, 0.651);
+}
+header.transform .q-head-nav:hover{
+    color: black;
+}
+.q-head-toggle{
+    display: none;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background:white;
+    border:1px solid lightgrey;
+    position: fixed;
+    top:30px;
+    left:30px;
+    z-index: 100;
+}
+.q-head-toggle i{
+    padding: 8px 7.5px;
+    
+}
+@media screen and (max-width:600px){
+    header{
+        height: 0px;
+        background:white;
+        overflow:hidden;
+        
+    }
+    .q-head-nav-wrap{
+        width: 100%;
+        margin-top:90px;
+        margin-bottom:30px;
+        
+    }
+    .q-head-nav{
+        width: 100%;
+        color: rgba(0, 0, 0, 0.651);
+    }
+    .q-head-nav:hover{
+        width: 100%;
+        color: black;
+    }
+    .q-head-toggle{
+        display: block;
+    }
+    header.show{
+        height: auto;
+    }
+}

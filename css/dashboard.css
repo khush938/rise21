@@ -1,0 +1,112 @@
+.q-dashboard{
+    width: 1000px;
+    margin-left:200px;
+    margin-top:100px;
+}
+.q-participant-add{
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.q-cover{
+    background:black;
+    opacity: 0.8;
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right: 0px;
+    display: none;
+}
+.q-participant-add-modal{
+    width: 392px;
+    height: 420px;
+    background:white;
+    top:calc(50vh - 210px);
+    left:calc(50vw - 196px);
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+}
+.q-participant-edit-modal{
+    width: 392px;
+    height: 500px;
+    background:white;
+    top:calc(50vh - 250px);
+    left:calc(50vw - 196px);
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+}
+.q-participant-edit-modal form{
+    padding: 0px 30px;
+}
+.q-input{
+    width: 300px;
+    border:1px lightgrey solid;
+    background:white;
+    border-radius: 5px;
+    padding:15px;
+    outline: 0px;
+}
+.q-input:focus{
+    border:1px blueviolet solid;
+}
+.q-modal-head{
+    color: black;
+    font-family: manrope-bold;
+    padding: 30px;
+}
+.q-participant-add-modal form{
+    padding: 0px 30px;
+}
+.q-modal-close{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    cursor: pointer;
+}
+.q-submit{
+    width: 330px;
+    border:1px blueviolet solid;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+    padding:15px;
+    cursor: pointer;
+}
+.q-submit:hover{
+    border:1px rgb(106, 32, 175) solid;
+    background: rgb(106, 32, 175);
+}
+.q-participant{
+    border:1px solid lightgrey;
+    margin: 30px 0px;
+}
+.q-part-img{
+    vertical-align: top;
+    display: inline-block;
+    height: 100px;
+}
+.q-part-img img{
+    width: 100px;
+    height: 100px;
+}
+.q-part-info{
+    vertical-align: top;
+    display: inline-block;
+    height: 100px;
+    padding: 20px;
+}
+.q-participant button{
+    color: blueviolet;
+    background: transparent;
+    border: 0px;
+    display: inline-block;
+    padding:0px;
+    text-decoration: underline;
+    cursor: pointer;
+}

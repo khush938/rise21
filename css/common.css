@@ -1,0 +1,470 @@
+@font-face {
+    font-family: manrope-bold;
+    src: url('../inc/fonts/bold.otf');
+}
+@font-face {
+    font-family: manrope-thin;
+    src: url('../inc/fonts/regular.otf');
+}
+html,body{
+    font-family: manrope-thin;
+    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.q-landing{
+    height: calc(100vh + 450px);
+    background: url('../med/RISE-BG.jpg'), linear-gradient(45deg, #3a060f,rgb(116, 0, 35));
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.q-landing-sub{
+    font-size: 24px;
+    font-weight: 500;
+    color: #cd7f32;
+}
+.q-landing-cont{
+    padding-bottom: 450px;
+}
+.q-white-boi{
+    height: 100vh;
+    background: url('../med/whitebg.png');
+    /* background-position: bottom; */
+    background-size: cover;
+    position: absolute;
+    top:100vh;
+    left: 0px;
+    right: 0px;
+}
+.q-heading{
+    color: black;
+    font-size: 30px;
+    font-family: manrope-bold;
+}
+
+.q-white-cont{
+    position: absolute;
+    top:calc(100vh + 500px);
+    left:0px;
+    right: 0px;
+    overflow-y: hidden;
+}
+.q-align{
+    display: flex;
+    width: 900px;
+    margin-left: calc(50vw - 450px);
+}
+
+.allahuakbar{
+    margin: 0 calc(50vw - 450px);
+}
+.allahuakbar > img{
+    width: 100%;
+}
+
+.q-align-p.p1{
+    margin: 0 35px !important;
+    width: 30%;
+}
+.q-align-p.p2{
+    width: 60%;
+}
+.q-event-cont{
+    background: url('../med/categories_top.png');
+    background-position: top;
+    margin-top:15vh;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom:500px;
+}
+.q-event-flex-wrap{
+    background:#1e1a2b;
+    padding:100px;
+    text-align:center;
+    padding-right:70px;
+    vertical-align: center;
+}
+.q-event-flex{
+    display:inline-block;
+    width: 300px;
+    /* background: rgb(116, 0, 35); */
+    background: #fffff0;
+    border-radius: 20px;
+    height: 300px;
+    margin-top:30px;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    vertical-align: center;
+    position: relative;
+    overflow:hidden;
+}
+.q-event-bottom{
+    background: url('../med/butt-8.png');
+    background-position: bottom;
+    position: absolute;
+    top: calc(100% - 460px);
+    background-repeat: no-repeat;
+    height: 500px;
+    left:0px;
+    right: 0px;
+    background-size: cover;
+}
+.q-contact{
+    margin-top:100px;
+    width: 550px;
+    margin-left:calc(50vw - 450px);
+    margin-right:calc(50vw - 450px);
+}
+.q-footer{
+    padding: 20px;
+    text-align: center;
+}
+.q-footer a{
+    color:rgb(182, 0, 55);
+    text-decoration: none;
+}
+.q-event-flex-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.4s;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+}
+.q-event-flex i{
+    font-size: 100px;
+    color: #342f4c;
+    transition: 0.4s;
+}
+.q-event-flex:hover{
+    background: #342f4c;
+}
+.q-event-flex:hover i{
+    color:#fffff0;
+    font-size:80px;
+    padding-bottom: 40px;
+}
+.q-event-flex-info{
+    position: absolute;
+    bottom: -40px;
+    left:0px;
+    right: 0px;
+    text-align: center;
+    color: #fffff0;
+    transition: 0.4s;
+    font-size: 20px;
+}
+.q-event-flex:hover .q-event-flex-info{
+    bottom:30px;
+}
+/*.q-event-flex:hover .q-event-flex-in{
+    height: calc(100% - 40px);
+}*/
+.q-popup-wrap{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    bottom: 0px;
+    z-index: 100;
+    display: none;
+}
+.q-popup-wrap-wrap{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+}
+.q-popup-back{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.411);
+}
+.q-popup{
+    position: relative;
+    background: white;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: auto;
+    transform: scale(0.1);
+    transition: 0.4s;
+}
+.q-popup.animate{
+    transform: scale(1);
+}
+.q-popup-title{
+    text-align: left;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+.q-popup-content{
+    text-align: left;
+    padding: 50px;
+    padding-top: 0px;
+}
+.q-popup-close{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.q-user-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+.q-user-circle::before{
+    content: '';
+    z-index: -1;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgb(52, 47, 76, 0.90);
+    border-radius: 50%;
+}
+.q-user-circle.two::before{
+    left: -20px;
+}
+.q-letter{
+    display: flex;
+    border-radius: 10px;
+    background: rgb(240, 240, 240);
+    width: 800px;
+    padding: 50px;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+}
+.q-sprite{
+    position: absolute;
+}
+.mentor-circle{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+}
+.mentor-circle-img{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+.mentor-circle-name{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #342f4c;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: white;
+    transition: 0.4s;
+    opacity: 0;
+}
+.mentor-circle:hover .mentor-circle-name{
+    opacity: 1;
+}
+.q-flags{
+    font-size: 100px;
+    display: inline-block;
+    margin: 20px;
+    height: 100px;
+}
+.q-brochure-button{
+    color:white;
+    background:rgb(255, 65, 65);
+    padding:15px 30px;
+    font-size:20px;
+    display:inline-block;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.q-carousel-wrap{
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+.q-carousel-slider{
+    white-space: nowrap;
+    height: 400px;
+    left: calc((50vw - (20vw + 20px)));
+    position: absolute;
+    transition: 0.4s;
+    font-size: 0;
+}
+.q-carousel-slide{
+    display: inline-block;
+    height: 400px;
+    width: 40vw;
+    margin: 20px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    
+}
+.q-carousel-slide::after{
+    background: linear-gradient(45deg, rgb(39, 34, 56, 0.95),rgb(41, 34, 63, 0.95));
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    transition: 0.4s;
+}
+.q-carousel-slide.sel::after{
+    opacity: 0;
+}
+.q-carousel-button{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;    
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.75);
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.q-carousel-button:hover{
+    background: #342f4c;
+    color:white;
+}
+
+.contact{
+    display: flex;
+    gap: 3vw;
+}
+@media screen and (max-width:900px){
+    .q-event-bottom{
+        top: calc(100% - 1120px);
+        z-index: -1;
+    }
+    .contact{
+        display: block;
+    }
+    .allahuakbar > img{
+        width: 50%;
+    }
+    .q-white-cont{
+        top: calc(100vh + 200px);
+    }
+    .logo{
+        width: 80%;
+    }
+    .q-white-boi{
+        height: 300px;
+    }
+    .q-landing{
+        height: calc(100vh + 300px);
+    }
+    .q-align{
+        display: flex;
+        width: auto;
+        padding:30px;
+        margin-left:0px;
+        flex-direction: column;
+    }
+    .q-align-p.p1{
+        width: auto;
+    }
+    .q-align-p.p2{
+        width: auto;
+    }
+    .q-event-flex-wrap{
+        padding:0px;
+        padding-top:100px;
+        overflow-x: hidden;
+    }
+    .q-event-flex{
+        width: 250px;
+        height: 250px;
+        margin-right: 0px;
+    }
+    .q-contact{
+        width: 100%;
+        margin-top:100px;
+        margin-left:0px;
+        margin-right: 0px;
+    }
+    .q-padding{
+        padding: 30px;
+    }
+    .q-popup{
+        width:100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .q-event-flex i{
+        color:#342f4c;
+        font-size:80px;
+        padding-bottom: 40px;
+    }
+    .q-event-flex-info{
+        bottom:30px;
+        color: #fffff0;
+    }
+    .q-letter{
+        width: calc(100% - 70px);
+        padding: 30px;
+        position: relative;
+        text-align: left;
+        font-size: 14px;
+    }
+    .q-user-circle{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: calc(50% - 75px) !important;
+    }
+    .q-user-circle::before{
+        display: none;
+    }
+    .q-carousel-wrap{
+        height: 300px;
+    }
+    .q-carousel-slide{
+        height: 300px;
+        width: 100vw;
+    }
+    .q-carousel-slider{
+        left: calc((50vw - (50vw + 20px)));
+    }
+}

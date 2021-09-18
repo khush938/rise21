@@ -1,0 +1,40 @@
+.q-login-wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.q-input{
+    width: 300px;
+    border:1px lightgrey solid;
+    background:white;
+    border-radius: 5px;
+    padding:15px;
+    outline: 0px;
+}
+.q-input:focus{
+    border:1px blueviolet solid;
+}
+.q-submit{
+    width: 330px;
+    border:1px blueviolet solid;
+    background: blueviolet;
+    color: white;
+    border-radius: 5px;
+    padding:15px;
+    cursor: pointer;
+}
+.q-submit:hover{
+    border:1px rgb(106, 32, 175) solid;
+    background: rgb(106, 32, 175);
+}
+#sid-span, #pass-span{
+    color: red;
+    text-align: left;
+    width: 300px;
+    font-size: 15px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
