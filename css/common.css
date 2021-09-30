@@ -17,7 +17,7 @@ body{
 }
 .q-landing{
     height: calc(100vh + 450px);
-    background: url('../med/RISE-BG.jpg'), linear-gradient(45deg, #3a060f,rgb(116, 0, 35));
+    background: url('../med/RISE-BG.jpg');
     background-position: bottom;
     background-size: cover;
     display: flex;
