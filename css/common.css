@@ -16,7 +16,7 @@ body{
     overflow-x: hidden;
 }
 .logo{
-    widht: 65%;
+    width: 65%;
 }
 .q-landing{
     height: calc(100vh + 450px);
